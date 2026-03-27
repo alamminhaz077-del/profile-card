@@ -23,7 +23,7 @@ body{
     width: 300px;
     background-color: #fff;
     padding: 30px;
-    text-align: center;
+    overflow: hidden;
 
 }
 #card img{
@@ -32,25 +32,41 @@ body{
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+    text-align: center;
 }
 #card h1{
     font-size: 30px;
     font-weight: 800;
     margin: 10px 0px ;
+    text-align: center;
     
 }
 #card h5{
     font-size: 25px;
     color: red;
     margin-bottom: 20px;
+    text-align: center;
+}
+#card i{
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.5s;
+}
+
+
+#card #btn-container{
+    text-align: end;
 }
 #card button{
-    background-color: cadetblue;
-    color: #fff;
+    color: black;
     font-weight: 700;
     padding: 12px 20px;
     border-radius: 5px;
-    border: none;
     margin: 5px;
     cursor: pointer;
 }
