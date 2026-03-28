@@ -38,4 +38,12 @@ heart.addEventListener("dblclick",function(){
               icon.style.transform = 'translate(-50%,-50%) scale(0)'
 
       },2000)
+});
+
+var main = document.querySelector("#main")
+var crsr = document.querySelector(".cursor")
+
+main.addEventListener("mousemove",function(dets){
+    crsr.style.left = dets.x+"px"
+    crsr.style.top = dets.y+"px"
 })
